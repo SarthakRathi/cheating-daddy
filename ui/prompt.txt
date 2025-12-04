@@ -1,0 +1,11 @@
+I need to refactor this Electron app's frontend from Lit to React.
+
+Create a new folder named ui and scaffold a minimal React + Vite setup inside it (index.html, main.jsx, App.jsx).
+
+In App.jsx, create a functional component that replicates the original UI: it should have an Input field for "Gemini API Key" and a "Start Session" button.
+
+Create a vite.config.js in the root that points to the ui folder.
+
+Update package.json: Add dependencies for react, react-dom, vite, @vitejs/plugin-react, and concurrently. Add a "start" script to run vite and electron together.
+
+Update the main electron file (src/main.js or index.js) to load http://localhost:5173 in development mode.
